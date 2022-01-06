@@ -1,0 +1,300 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindergarden</title>
+    <link rel="stylesheet" href="{% static './css/style.css' %}">
+    <link rel="stylesheet" href="{% static './fontawesome-free-5.15.3-web/css/all.css' %}">
+    <link rel="stylesheet" href="{% static './bootstrap-5.0.2-dist/css/bootstrap.css' %}">
+
+    <link rel="icon" href="{% static './Images/title.png' %}">
+</head>
+
+<body>
+    <header id="header-about">
+        <div class="navAbout">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 pt-2 ps-5">
+                        <h1 class="nav-info">Dilsevar</h1><span class="text-danger display-flex para">.</span>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fas fa-map-marker-alt soat fa-2x text-warning"></i>
+                        <p class="navinfo1 pt-2 text-white">
+                            14-uy, 5-Loyish tor kuchasi, Oqdaryo. Uzbekistan
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="far fa-clock soat fa-2x text-warning"></i>
+                        <p class="navinfo1 pt-2 text-white">
+                            Dushanbadan-Shanbagacha 7:30AM-17:00PM
+                        </p>
+                    </div>
+                </div>
+                <div class="nav-dum pt-5">
+                    <div class="nav-dumaloq">
+
+                        <div class="ul">
+                            <ul>
+                                <li>
+                                    <p class="menuni">
+                                        <i class="fas fa-times" style="margin: 0; padding: 0;"></i>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="{% url 'home' %}">Uy</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'about' %}" class="active">Haqida</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'news' %}">Jamoa</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'galery' %}">Galeriya</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'contact' %}">Bog'lanish</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="https://t.me/malika_egamquluva">
+                            <div class="tg">
+                                <i class="fab fa-telegram"></i>
+                                <i class="fab fa-instagram-square"></i>
+                            </div>
+                        </a>
+                        <div class="menuJS ps-4">
+                            <h5 class="menuni">Menu</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+    </header>
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 bg-danger">
+                    <i></i>
+                    <!-- Bu yerga icon quyaman -->
+                    <div class="col-lg-12 yuz">
+                        <div class="rasm">
+                            <i class="fas fa-home fa-2x text-warning"></i>
+                        </div>
+                    </div>
+                    <h3 class="py-2 text-center text-white px-3">Yopiq o'yinlar </h3>
+                    <h5 class="pb-5 text-center text-white px-3">Nutq o'stirish, Badiy Adabiyot, Matematika, Musiqa,
+                        Tabiat bilan tanishtirish, Jismoniy Tarbiya, Savodga O'rgatish, Tasviriy faoliyat,
+                        Ko'ngil ochar o'yinlar</h5>
+                </div>
+                <div class="col-lg-4 bg-warning">
+                    <i></i>
+                    <!-- Bu yerga icon quyaman -->
+                    <div class="col-lg-12 yuz">
+                        <div class="rasm">
+                            <i class="fas fa-user fa-2x text-warning"></i>
+                        </div>
+                    </div>
+                    <h3 class="py-2 text-center text-white px-3">Ochiq O'yin va Tadbir</h3>
+                    <h5 class="pb-5 text-center text-white px-3">Yosh raqqosalar,
+                        Tikish Bichish, Yosh rasssomlar, Suxandonlik,
+                        Pazandachilik, Til o'rgatish, Sport, Ustachilik.</h5>
+                </div>
+                <div class="col-lg-4 bg-primary">
+                    <i></i>
+                    <!-- Bu yerga icon quyaman -->
+                    <div class="col-lg-12 yuz">
+                        <div class="rasm">
+                            <i class="fas fa-cog fa-2x text-warning"></i>
+                        </div>
+                    </div>
+                    <h3 class="py-2 text-center text-white px-3">Bolalar uchun lager</h3>
+                    <h5 class="pb-5 text-center text-white px-3">Farzandingiz uchun to'g'ri yozgi
+                        lagerni topish bo'yicha dastlabki qadamingiz yozgi lager dasturlarining
+                        ko'plab turlarini o'rganishdan iborat. Sizning uyingizda tomoshabin
+                        san'atkori san'at lageridan lazzatlanishlari mumkin.</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="backpage">
+        <h6 class="text-center text-danger tuplam pt-5 ">To'plamlar siz uchun</h6>
+        <h1 class="text-center text-white pt-1 pb-5">Bizning to'plamlarimiz</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="boxrow">
+                        <div class="blog-rasm1 pt-5">
+
+                        </div>
+                        <h3 class="text-secondary">Yopiq o'yinlar</h3>
+                        <p>Issiq, shinam xonalar. Har xil yumshoq o'yinchoqlar bilan jihozlangan bog'cha </p>
+                        <a href="{% url 'about' %}">
+                            <button class="btn btn-secondary button-more mb-5 mt-2">Learn More</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="boxrow">
+                        <div class="blog-rasm2 pt-5">
+
+                        </div>
+                        <h3 class="text-success">Ochiq havoda o'yin va tadbir </h3>
+                        <p>Uzining bog'iga, havzasiga, zaliga ega </p>
+                        <a href="{% url 'about' %}">
+                            <button class="btn btn-success button-more mb-5 mt-2">Learn More</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="boxrow">
+                        <div class="blog-rasm3 pt-5">
+
+                        </div>
+                        <h3 class="text-danger">Bolalar uchun lager</h3>
+                        <p>Ciroyli bo'cha, chumilish havzasi, o'yin maydonlari</p>
+                        <a href="{% url 'about' %}">
+                            <button class="btn btn-danger button-more mb-5 mt-2">Learn More</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experince">
+        <div class="malumot">
+            <div class="orqa">
+                <div class="container">
+                    <div class="">
+                        <div class="box-3 pt-5">
+                            <h1 class="malumot1">Dilsevar  </h1>
+                            <h1 class="malumot2"> nomli Bog'cha</h1>
+                        </div>
+                        <div class="box-4">
+                            <p class="text-center pt-3 text-warning">
+                                Oqdaryo tuman Maktabgacha ta'lim bo'limi
+                                tasarrufidagi Dilsevar nomli oilaviy nodavlat
+                                Maktabgacha ta'lim tashkiloti. YATT ABDIYEV SHAVKAT SHAKAROVICH
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="row pb-5 counters" data-aos="fade-up" data-aos-anchor-placement="center-center">
+                        <div class="col-md-3">
+                            <h1 class="text-primary text-center">
+                                <div class="counter" data-target="2">0</div>
+                            </h1>
+                            <h4 class="text-center text-danger">O'qituvchi</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <h1 class="text-primary text-center">
+                                <div class="counter" data-target="20">0</div>
+                            </h1>
+                            <h4 class="text-center text-danger">nafar bolalar</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <h1 class="text-primary text-center">
+                                <div class="counter" data-target="40">0</div>
+                            </h1>
+                            <h4 class="text-center text-danger">ta baxtli client</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <h1 class="text-primary text-center">
+                                <div class="counter" data-target="50">0</div>
+                            </h1>
+                            <h4 class="text-center text-danger">dan ortiq jihozlar</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="moreAbout">
+        <div class="bg-nimrang">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-md-6 py-5">
+                        <div class="col-md-10 ms-5">
+                            <img src="{% static './Images/image3.jpg' %}" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 py-5">
+                        <h5 class="text-danger">Bu Haqida</h5>
+                        <h1>Farzandlaringizga qiziqarli hayot bering</h1>
+                        <p>
+                            Ertalabki badan tarbiya 08:30 dan 09:00
+                            gacha nonushta vaqti 09:00 dan 09:30
+                            gacha faoliyatlarga tayorgarlik 09:30
+                            dan 10:00 gacha faoliyatlar 10:00 dan
+                            11:20 gacha sayrga tayorgarlik 11:20 dan
+                            11:30 gacha sayr 11:30 dan 12:00 gacha
+                            tushlikga tayorgarlik 12:00 dan 12:10
+                            gacha 12:10 dan 13:00 gacha uyqu 13:00
+                            dan 15:00 gacha uyqudan turish 15:30 dan
+                            16:00 gacha kechki ovqat 16:00 dan 16:20
+                            gacha o'yinlar 16:20 dan 16:30 gacha uyga
+                            ketish 16:30 dan 17:00 gacha
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="bg-foter">
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-lg-4 my-5 ps-5">
+                    <h2 class="text-secondary">Dilsevar nomli bog'cha</h2>
+                    <p class="text-danger"> Oqdaryo tuman Maktabgacha ta'lim bo'limi
+                        tasarrufidagi Dilsevar nomli oilaviy nodavlat
+                        Maktabgacha ta'lim tashkiloti. YATT ABDIYEV SHAVKAT SHAKAROVICH
+                    </p>
+                </div>
+                <div class="col-lg-4 text-danger my-5">
+                    <span><i class="fas fa-phone"></i></span><span>Telefon raqam: <a href="tel:+998972869588"
+                            style="text-decoration: none;">+998 97 286 95 88</a></span>
+                    <hr>
+                    <span><i class="fas fa-phone"></i></span><span>Email: <a href="https://malikaegamquluva@gmail.com"
+                            style="text-decoration: none;">malikaegamquluva@gmail.com</a></span>
+                    <hr>
+                    <span><i class="fas fa-map-marker-alt"></i></span><span>Manzil: <a
+                            href="https://goo.gl/maps/kxDY4xA7nRVzgjvF9" style="text-decoration: none;">Samarqand v,
+                            Oqdaryo t, Qushyo'g'och q</a></span>
+                    <hr>
+                </div>
+                <!-- <i class="fas fa-map-marker-alt soat fa-2x text-warning"></i> -->
+                <div class="col-lg-4">
+                    <h1 class="text-foter-">Dilsevar nomli bog'cha </h1>
+                </div>
+                <div class="credits col-md-12 text-center pb-5">
+                    <hr /> Copyright &copy; 2021 by <a href="https://t.me/az1kkcoder"> Azamat Pulatov | Az1kk_coder</a>
+                    <br>
+                    <i class="fa fa-map-marker"></i> <a
+                        href="https://t.me/raqamlitexnologiya_oqdaryo">Oqdaryo-IT_PARK</a>
+                    <!-- Go To Top Link -->
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="{% static './JavaScripts/app.js' %}"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menuni').click(function () {
+                $('.ul').toggleClass('active'),
+                    console.log("hello");
+            })
+        })
+
+    </script>
+</body>
+
+</html>

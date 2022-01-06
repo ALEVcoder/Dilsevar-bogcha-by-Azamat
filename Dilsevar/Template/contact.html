@@ -1,0 +1,153 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindergarden</title>
+    <link rel="stylesheet" href="{% static './css/style.css' %}">
+    <link rel="stylesheet" href="{% static './fontawesome-free-5.15.3-web/css/all.css' %}">
+    <link rel="stylesheet" href="{% static './bootstrap-5.0.2-dist/css/bootstrap.css' %}">
+
+    <link rel="icon" href="{% static './Images/title.png' %}">
+</head>
+<body>
+    <header id="header-about">
+        <div class="navAbout">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 pt-2 ps-5">
+                        <h1 class="nav-info">Dilsevar</h1><span class="text-danger display-flex para">.</span>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fas fa-map-marker-alt soat fa-2x text-warning"></i>
+                        <p class="navinfo1 pt-2 text-white">
+                            14-uy, 5-Loyish tor kuchasi, Oqdaryo. Uzbekistan
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="far fa-clock soat fa-2x text-warning"></i>
+                        <p class="navinfo1 pt-2 text-white">
+                            Dushanbadan-Shanbagacha 7:30AM-17:00PM
+                        </p>
+                    </div>
+                </div>
+                <div class="nav-dum pt-5">
+                    <div class="nav-dumaloq">
+
+                        <div class="ul">
+                            <ul>
+                                <li>
+                                    <p class="menuni">
+                                        <i class="fas fa-times" style="margin: 0; padding: 0;"></i>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="{% url 'home' %}">Uy</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'about' %}">Haqida</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'news' %}">Jamoa</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'galery' %}">Galeriya</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'contact' %}" class="active">Bog'lanish</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="https://t.me/malika_egamquluva">
+                            <div class="tg">
+                                <i class="fab fa-telegram"></i>
+                                <i class="fab fa-instagram-square"></i>
+                            </div>
+                        </a>
+                        <div class="menuJS ps-4">
+                            <h5 class="menuni">Menu</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+    </header>
+    <section id="contact">
+        <div class="contactrasm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6"></div>
+                    <div class="col-md-6 text-white bg-primary">
+                        <h1 class="py-3">Fikr va Mulohazalar</h1>
+                        <form action="#" method="POST">
+                            {% csrf_token %}
+                            <input type="text" class="form-control py2" placeholder="Ism" name="name" id="name">
+                            <input type="text" class="form-control py-2" placeholder="Familiya" name="fname" id="fname">
+                            <br>
+                            <input type="number" class="form-control py-2" placeholder="Tel raqam" name="tel" id="tel">
+                            <br>
+                            <textarea name="mess" id="mess" cols="" placeholder="Xabar" rows=""></textarea><br>
+                            <input type="submit" id="yubor" value="Yuborish">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="bg-foter">
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-lg-4 my-5 ps-5">
+                    <h2 class="text-secondary">Dilsevar nomli bog'cha</h2>
+                    <p class="text-danger"> Oqdaryo tuman Maktabgacha ta'lim bo'limi
+                        tasarrufidagi Dilsevar nomli oilaviy nodavlat
+                        Maktabgacha ta'lim tashkiloti. YATT ABDIYEV SHAVKAT SHAKAROVICH
+                    </p>
+                </div>
+                <div class="col-lg-4 text-danger my-5">
+                    <span><i class="fas fa-phone"></i></span><span>Telefon raqam: <a href="tel:+998972869588"
+                            style="text-decoration: none;">+998 97 286 95 88</a></span>
+                    <hr>
+                    <span><i class="fas fa-phone"></i></span><span>Email: <a href="https://malikaegamquluva@gmail.com"
+                            style="text-decoration: none;">malikaegamquluva@gmail.com</a></span>
+                    <hr>
+                    <span><i class="fas fa-map-marker-alt"></i></span><span>Manzil: <a
+                            href="https://goo.gl/maps/kxDY4xA7nRVzgjvF9" style="text-decoration: none;">Samarqand v,
+                            Oqdaryo t, Qushyo'g'och q</a></span>
+                    <hr>
+                </div>
+                <!-- <i class="fas fa-map-marker-alt soat fa-2x text-warning"></i> -->
+                <div class="col-lg-4">
+                    <h1 class="text-foter-">Dilsevar nomli bog'cha </h1>
+                </div>
+                <div class="credits col-md-12 text-center pb-5">
+                    <hr /> Copyright &copy; 2021 by <a href="https://t.me/az1kkcoder"> Azamat Pulatov | Az1kk_coder</a>
+                    <br>
+                    <i class="fa fa-map-marker"></i> <a
+                        href="https://t.me/raqamlitexnologiya_oqdaryo">Oqdaryo-IT_PARK</a>
+                    <!-- Go To Top Link -->
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="{% static './JavaScripts/app.js' %}"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menuni').click(function () {
+                $('.ul').toggleClass('active'),
+                    console.log("hello");
+            })
+        })
+
+    </script>
+</body>
+</html>
